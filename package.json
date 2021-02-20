@@ -1,0 +1,25 @@
+{
+  "name": "apis-store-backend",
+  "version": "1.0.0",
+  "description": "API's Store - Lots of Data with API endpoints",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdnmnahmed/apis-store-backend.git"
+  },
+  "keywords": [
+    "api",
+    "api-store",
+    "free-api",
+    "api-with-lots-of-data"
+  ],
+  "author": "N_Ah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdnmnahmed/apis-store-backend/issues"
+  },
+  "homepage": "https://github.com/mdnmnahmed/apis-store-backend#readme"
+}

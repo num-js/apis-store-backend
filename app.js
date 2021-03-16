@@ -15,7 +15,7 @@ app.use('/users', require('./routes/usersRoute'));
 
 
 app.get('/', (req, res) => {
-    res.send('Hello Numan');
+    res.send('Hello Hero 😎 !    Welcome to APIs Store');
 });
 
 

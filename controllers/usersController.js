@@ -9,10 +9,16 @@ const userModel = require('../models/userModel');
 const getUsers = async (req, res) => {
     try {
         const data = await userModel.find();
-        res.status(200).json({
-            message: 'User Data Fetched',
-            data: data
-        });
+        if (data.length > 0) {
+            res.status(200).json({
+                message: 'User Data Fetched',
+                data: data
+            });
+        } else {
+            res.status(404).json({
+                message: 'No Users Data'
+            });
+        }
     } catch (err) {
         res.status(400).json({ message: err.message })
     }
@@ -47,10 +53,16 @@ const addUser = async (req, res) => {
 const getSpecificUser = async (req, res) => {
     try {
         const specificUser = await userModel.findById(req.params.user_id);
-        res.status(200).json({
-            message: 'Fetched specific users data',
-            data: specificUser
-        });
+        if (specificUser !== null) {
+            res.status(200).json({
+                message: 'Fetched specific users data',
+                data: specificUser
+            });
+        } else {
+            res.status(404).json({
+                message: 'User not found'
+            });
+        }
     } catch (err) {
         res.status(400).json({ message: err.message })
     }
@@ -71,9 +83,8 @@ const deleteUser = async (req, res) => {
                 data: deletedUser
             });
         } else {
-            res.status(400).json({
-                message: "User not Found",
-                data: deletedUser
+            res.status(404).json({
+                message: "User not Found"
             });
         }
     } catch (err) {
@@ -92,10 +103,16 @@ const updateUser = async (req, res) => {
     const updateUserData = req.body;
     try {
         const updatedUser = await userModel.findByIdAndUpdate(_id, updateUserData, { new: true });
-        res.status(200).json({
-            message: "User's data Updated",
-            data: updatedUser
-        });
+        if (updatedUser !== null) {
+            res.status(200).json({
+                message: "User's data Updated",
+                data: updatedUser
+            });
+        }else{
+            res.status(404).json({
+                message: 'User not Found'
+            });
+        }
     } catch (err) {
         res.status(400).json({ message: err.message })
     }

@@ -1,19 +1,19 @@
 const userModel = require('../models/userModel');
 
 /**
- * callback function
+ * callback function - Get all users
  * @param {object} req 
  * @param {object} res 
  * 
  */
-const getUsers = (req, res) => {
+const getUsers = async (req, res) => {
     try {
-        // res.status(200).json({ data: 'NNN' });
-        res.status(400).json({ message: err.message })
+        const data = await userModel.find();
+        res.status(200).json({
+            message: 'User Data Fetched',
+            data: data
+        });
     } catch (err) {
         res.status(400).json({ message: err.message })
     }
 }
-
-
-module.exports = { getUsers }

@@ -37,3 +37,24 @@ const addUser = async (req, res) => {
         res.status(400).json({ message: err.message })
     }
 }
+
+/**
+ * callback function - Get a Specific user's Data
+ * @param {object} req 
+ * @param {object} res 
+ * 
+ */
+ const getSpecificUser = async (req, res) => {
+    try {
+        const specificUser = await userModel.findById(req.params.user_id);
+        res.status(200).json({
+            message: 'Fetched specific users data',
+            data: specificUser
+        });
+    } catch (err) {
+        res.status(400).json({ message: err.message })
+    }
+}
+
+
+module.exports = { getUsers, addUser, getSpecificUser,  }

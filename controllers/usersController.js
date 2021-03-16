@@ -76,11 +76,30 @@ const deleteUser = async (req, res) => {
                 data: deletedUser
             });
         }
+    } catch (err) {
+        res.status(400).json({ message: err.message })
+    }
+}
 
+/**
+ * callback function - Update a Specific user's data
+ * @param {object} req 
+ * @param {object} res 
+ * 
+ */
+const updateUser = async (req, res) => {
+    const { user_id: _id } = req.params; //Extracting user_id & giving a name _id at the same time
+    const updateUserData = req.body;
+    try {
+        const updatedUser = await userModel.findByIdAndUpdate(_id, updateUserData, { new: true });
+        res.status(200).json({
+            message: "User's data Updated",
+            data: updatedUser
+        });
     } catch (err) {
         res.status(400).json({ message: err.message })
     }
 }
 
 
-module.exports = { getUsers, addUser, getSpecificUser, deleteUser, }
+module.exports = { getUsers, addUser, getSpecificUser, deleteUser, updateUser };

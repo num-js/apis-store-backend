@@ -17,3 +17,23 @@ const getUsers = async (req, res) => {
         res.status(400).json({ message: err.message })
     }
 }
+
+
+/**
+ * callback function - Add new User
+ * @param {object} req 
+ * @param {object} res 
+ * 
+ */
+const addUser = async (req, res) => {
+    const newUserData = new userModel(req.body);
+    try {
+        await newUserData.save();
+        res.status(200).json({
+            message: 'New user added successfully',
+            data: newUserData
+        });
+    } catch (err) {
+        res.status(400).json({ message: err.message })
+    }
+}

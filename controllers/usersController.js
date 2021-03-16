@@ -44,7 +44,7 @@ const addUser = async (req, res) => {
  * @param {object} res 
  * 
  */
- const getSpecificUser = async (req, res) => {
+const getSpecificUser = async (req, res) => {
     try {
         const specificUser = await userModel.findById(req.params.user_id);
         res.status(200).json({
@@ -56,5 +56,31 @@ const addUser = async (req, res) => {
     }
 }
 
+/**
+ * callback function - Delete a Specific user's data
+ * @param {object} req 
+ * @param {object} res 
+ * 
+ */
+const deleteUser = async (req, res) => {
+    try {
+        const deletedUser = await userModel.findByIdAndDelete({ _id: req.params.user_id });
+        if (deletedUser) {
+            res.status(200).json({
+                message: "User's data deleted",
+                data: deletedUser
+            });
+        } else {
+            res.status(400).json({
+                message: "User not Found",
+                data: deletedUser
+            });
+        }
 
-module.exports = { getUsers, addUser, getSpecificUser,  }
+    } catch (err) {
+        res.status(400).json({ message: err.message })
+    }
+}
+
+
+module.exports = { getUsers, addUser, getSpecificUser, deleteUser, }

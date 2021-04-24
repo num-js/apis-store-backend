@@ -14,19 +14,80 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/users/get-users",
-							"protocol": "http",
+							"raw": "https://apis-store.herokuapp.com/users/get-users",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"apis-store",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"users",
 								"get-users"
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "1.get-users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://apis-store.herokuapp.com/users/get-users",
+									"protocol": "https",
+									"host": [
+										"apis-store",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users",
+										"get-users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "542"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"21e-ovteW2HiabHQqBc8vypK6lgtuUc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Apr 2021 17:18:16 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Data Fetched\",\n    \"data\": [\n        {\n            \"_id\": \"604f7512ef9acaf15bbef1fd\",\n            \"name\": \"Numan\",\n            \"creating_date\": \"2021-04-24T17:18:16.930Z\"\n        },\n        {\n            \"_id\": \"60503d68c4392e0f1cd75764\",\n            \"name\": \"Num\",\n            \"creating_date\": \"2021-03-16T05:08:56.729Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"60844fc05ba21f2ea0dab0a8\",\n            \"name\": \"Num\",\n            \"creating_date\": \"2021-04-24T17:05:04.591Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6084513a17fcc20015826a47\",\n            \"name\": \"Num\",\n            \"creating_date\": \"2021-04-24T17:11:22.891Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6084528817fcc20015826a49\",\n            \"name\": \"Num test Updated\",\n            \"creating_date\": \"2021-04-24T17:16:56.417Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "2.add-user",
@@ -35,7 +96,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"name\": \"Num\"\r\n}",
+							"raw": "{\r\n\t\"name\": \"Numan delete\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -43,19 +104,89 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/users/add-user",
-							"protocol": "http",
+							"raw": "https://apis-store.herokuapp.com/users/add-user",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"apis-store",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"users",
 								"add-user"
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "2.add-user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"name\": \"Numan\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apis-store.herokuapp.com/users/add-user",
+									"protocol": "https",
+									"host": [
+										"apis-store",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users",
+										"add-user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"95-nYKg6s8/51rveQETqwj+PPZ9Tqo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Apr 2021 17:19:09 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"New user added successfully\",\n    \"data\": {\n        \"_id\": \"6084530d17fcc20015826a4a\",\n        \"name\": \"Numan\",\n        \"creating_date\": \"2021-04-24T17:19:09.678Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "3.get-specific-user",
@@ -63,20 +194,142 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/users/get-specific-user/60501848ffa7bb328880e287",
-							"protocol": "http",
+							"raw": "https://apis-store.herokuapp.com/users/get-specific-user/6084524217fcc20015826a48",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"apis-store",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"users",
 								"get-specific-user",
-								"60501848ffa7bb328880e287"
+								"6084524217fcc20015826a48"
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "3.get-specific-user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://apis-store.herokuapp.com/users/get-specific-user/6084528817fcc20015826a49",
+									"protocol": "https",
+									"host": [
+										"apis-store",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users",
+										"get-specific-user",
+										"6084528817fcc20015826a49"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "160"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"a0-NcgDsWgsHB6mD3JRkiWEa6PY66M\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Apr 2021 17:19:44 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Fetched specific users data\",\n    \"data\": {\n        \"_id\": \"6084528817fcc20015826a49\",\n        \"name\": \"Num test Updated\",\n        \"creating_date\": \"2021-04-24T17:16:56.417Z\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "3.get-specific-user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://apis-store.herokuapp.com/users/get-specific-user/6084524217fcc20015826a48",
+									"protocol": "https",
+									"host": [
+										"apis-store",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users",
+										"get-specific-user",
+										"6084524217fcc20015826a48"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"1c-ZEVVcvtFhxKX/QUvVKqKxwGbbNA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Apr 2021 17:20:00 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User not found\"\n}"
+						}
+					]
 				},
 				{
 					"name": "4.delete-user",
@@ -84,20 +337,142 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/users/delete-user/60501848ffa7bb328880e287",
-							"protocol": "http",
+							"raw": "https://apis-store.herokuapp.com/users/delete-user/6084536717fcc20015826a4b",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"apis-store",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"users",
 								"delete-user",
-								"60501848ffa7bb328880e287"
+								"6084536717fcc20015826a4b"
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "4.delete-user",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://apis-store.herokuapp.com/users/delete-user/6084536717fcc20015826a4b",
+									"protocol": "https",
+									"host": [
+										"apis-store",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users",
+										"delete-user",
+										"6084536717fcc20015826a4b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "148"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"94-6yQnwzywGWtmxRr2Q17Pd7Ifbtk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Apr 2021 17:20:48 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User's data deleted\",\n    \"data\": {\n        \"_id\": \"6084536717fcc20015826a4b\",\n        \"name\": \"Numan delete\",\n        \"creating_date\": \"2021-04-24T17:20:39.914Z\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "4.delete-user",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://apis-store.herokuapp.com/users/delete-user/6084536717fcc20015826a4b",
+									"protocol": "https",
+									"host": [
+										"apis-store",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users",
+										"delete-user",
+										"6084536717fcc20015826a4b"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"1c-wWRO3cY9+V4IIrkWuThMqFyTh2g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Apr 2021 17:20:58 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User not Found\"\n}"
+						}
+					]
 				},
 				{
 					"name": "5.update-user",
@@ -106,7 +481,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"name\": \"Num Updated\"\r\n}",
+							"raw": "{\r\n\t\"name\": \"Numan test Updated\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -114,20 +489,91 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/users/update-user/6050188dffa7bb328880e288",
-							"protocol": "http",
+							"raw": "https://apis-store.herokuapp.com/users/update-user/6084528817fcc20015826a49",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"apis-store",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"users",
 								"update-user",
-								"6050188dffa7bb328880e288"
+								"6084528817fcc20015826a49"
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "5.update-user",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"name\": \"Numan test Updated\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://apis-store.herokuapp.com/users/update-user/6084528817fcc20015826a49",
+									"protocol": "https",
+									"host": [
+										"apis-store",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users",
+										"update-user",
+										"6084528817fcc20015826a49"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "154"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"9a-/9fnSCR1RwKdPiWoetb5A5Tjvt4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Apr 2021 17:21:29 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User's data Updated\",\n    \"data\": {\n        \"_id\": \"6084528817fcc20015826a49\",\n        \"name\": \"Numan test Updated\",\n        \"creating_date\": \"2021-04-24T17:16:56.417Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
 				}
 			]
 		}

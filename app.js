@@ -8,7 +8,7 @@ const app = express();
 
 //Middlewares
 app.use(bodyParser.json());
-// app.use(cors());
+app.use(cors());
 
 //Routes
 app.use('/users', require('./routes/usersRoute'));

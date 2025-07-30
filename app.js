@@ -12,6 +12,7 @@ app.use(cors());
 
 //Routes
 app.use('/users', require('./routes/usersRoute'));
+app.use('/quotes', require('./routes/quotesRoute'));
 
 
 app.get('/', (req, res) => {

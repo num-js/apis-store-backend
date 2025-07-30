@@ -69,6 +69,32 @@ const getSpecificQuote = async (req, res) => {
 }
 
 /**
+ * callback function - Get a Random quote's Data
+ * @param {object} req 
+ * @param {object} res 
+ * 
+ */
+const getRandomQuote = async (req, res) => {
+    try {
+        const count = await quotesModel.countDocuments();
+        const random = Math.floor(Math.random() * count);
+        const randomQuote = await quotesModel.findOne().skip(random);
+        if (randomQuote !== null) {
+            res.status(200).json({
+                message: 'Fetched random quote data',
+                data: randomQuote
+            });
+        } else {
+            res.status(404).json({
+                message: 'Quote not found'
+            });
+        }
+    } catch (err) {
+        res.status(400).json({ message: err.message })
+    }
+}
+
+/**
  * callback function - Delete a Specific quote's data
  * @param {object} req 
  * @param {object} res 
@@ -119,4 +145,4 @@ const updateQuote = async (req, res) => {
 }
 
 
-module.exports = { getQuotes, addQuote, getSpecificQuote, deleteQuote, updateQuote };
+module.exports = { getQuotes, addQuote, getSpecificQuote, getRandomQuote, deleteQuote, updateQuote };

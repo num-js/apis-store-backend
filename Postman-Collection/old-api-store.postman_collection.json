@@ -2,8 +2,7 @@
 	"info": {
 		"_postman_id": "37030970-6c02-467a-8c5d-597b38219e3d",
 		"name": "api-store",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "25132824"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -15,9 +14,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local-url}}/users/get-users",
+							"raw": "https://apis-store.herokuapp.com/users/get-users",
+							"protocol": "https",
 							"host": [
-								"{{local-url}}"
+								"apis-store",
+								"herokuapp",
+								"com"
 							],
 							"path": [
 								"users",
@@ -102,9 +104,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{local-url}}/users/add-user",
+							"raw": "https://apis-store.herokuapp.com/users/add-user",
+							"protocol": "https",
 							"host": [
-								"{{local-url}}"
+								"apis-store",
+								"herokuapp",
+								"com"
 							],
 							"path": [
 								"users",
@@ -189,14 +194,17 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local-url}}/users/get-specific-user/6888e00eb92eee6d8d57262a",
+							"raw": "https://apis-store.herokuapp.com/users/get-specific-user/6084524217fcc20015826a48",
+							"protocol": "https",
 							"host": [
-								"{{local-url}}"
+								"apis-store",
+								"herokuapp",
+								"com"
 							],
 							"path": [
 								"users",
 								"get-specific-user",
-								"6888e00eb92eee6d8d57262a"
+								"6084524217fcc20015826a48"
 							]
 						}
 					},
@@ -492,284 +500,6 @@
 								"users",
 								"update-user",
 								"6084528817fcc20015826a49"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "5.update-user",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n\t\"name\": \"Numan test Updated\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "https://apis-store.herokuapp.com/users/update-user/6084528817fcc20015826a49",
-									"protocol": "https",
-									"host": [
-										"apis-store",
-										"herokuapp",
-										"com"
-									],
-									"path": [
-										"users",
-										"update-user",
-										"6084528817fcc20015826a49"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Server",
-									"value": "Cowboy"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "154"
-								},
-								{
-									"key": "Etag",
-									"value": "W/\"9a-/9fnSCR1RwKdPiWoetb5A5Tjvt4\""
-								},
-								{
-									"key": "Date",
-									"value": "Sat, 24 Apr 2021 17:21:29 GMT"
-								},
-								{
-									"key": "Via",
-									"value": "1.1 vegur"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"message\": \"User's data Updated\",\n    \"data\": {\n        \"_id\": \"6084528817fcc20015826a49\",\n        \"name\": \"Numan test Updated\",\n        \"creating_date\": \"2021-04-24T17:16:56.417Z\",\n        \"__v\": 0\n    }\n}"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "quotes",
-			"item": [
-				{
-					"name": "1.get-quotes",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{local-url}}/quotes/get-quotes",
-							"host": [
-								"{{local-url}}"
-							],
-							"path": [
-								"quotes",
-								"get-quotes"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "2.add-quote",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"quote\": \"If you can't deploy your code, you don't own it.\",\r\n    \"author\": \"\",\r\n    \"type\": \"coding\",\r\n    \"likes\": 10\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{local-url}}/quotes/add-quote",
-							"host": [
-								"{{local-url}}"
-							],
-							"path": [
-								"quotes",
-								"add-quote"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "2.add-quote",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"quote\": \"The best error message is the one that never shows up.\",\r\n    \"author\": \"Thomas Fuchs\",\r\n    \"likes\": 8\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{local-url}}/quotes/add-quote",
-									"host": [
-										"{{local-url}}"
-									],
-									"path": [
-										"quotes",
-										"add-quote"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "JSON",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express",
-									"type": "text"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*",
-									"type": "text"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8",
-									"type": "text"
-								},
-								{
-									"key": "Content-Length",
-									"value": "252",
-									"type": "text"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"fc-J3dmNXxRscNKq1bB4t5RvLjOJbM\"",
-									"type": "text"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 30 Jul 2025 02:33:08 GMT",
-									"type": "text"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive",
-									"type": "text"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5",
-									"type": "text"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"message\": \"New quote added successfully\",\n    \"data\": {\n        \"author\": \"Thomas Fuchs\",\n        \"likes\": 8,\n        \"type\": \"motivational\",\n        \"_id\": \"6889846487610683b628c6f0\",\n        \"quote\": \"The best error message is the one that never shows up.\",\n        \"createdOn\": \"2025-07-30T02:33:08.157Z\",\n        \"__v\": 0\n    }\n}"
-						}
-					]
-				},
-				{
-					"name": "3.get-specific-quote",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{local-url}}/quotes/get-specific-quote/6889846487610683b628c6f0",
-							"host": [
-								"{{local-url}}"
-							],
-							"path": [
-								"quotes",
-								"get-specific-quote",
-								"6889846487610683b628c6f0"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "3.2.get-random-quote",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{local-url}}/quotes/get-random-quote",
-							"host": [
-								"{{local-url}}"
-							],
-							"path": [
-								"quotes",
-								"get-random-quote"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "4.delete-quote",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "{{local-url}}/quotes/delete-quote/6889846487610683b628c6f0",
-							"host": [
-								"{{local-url}}"
-							],
-							"path": [
-								"quotes",
-								"delete-quote",
-								"6889846487610683b628c6f0"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "5.update-quote",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\t\"type\": \"coding\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{local-url}}/quotes/update-quote/6889846487610683b628c6f0",
-							"host": [
-								"{{local-url}}"
-							],
-							"path": [
-								"quotes",
-								"update-quote",
-								"6889846487610683b628c6f0"
 							]
 						}
 					},

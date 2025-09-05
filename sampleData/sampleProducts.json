@@ -1,0 +1,312 @@
+[
+  {
+    "title": "iPhone 15 Pro Max",
+    "description": "The most advanced iPhone ever with A17 Pro chip, titanium design, and pro camera system featuring 5x telephoto zoom.",
+    "shortDescription": "Latest iPhone with titanium design and advanced A17 Pro chip",
+    "images": [
+      "https://example.com/images/iphone15pro-front.jpg",
+      "https://example.com/images/iphone15pro-back.jpg",
+      "https://example.com/images/iphone15pro-side.jpg"
+    ],
+    "price": {
+      "original": 1199.99,
+      "discounted": 1099.99,
+      "currency": "USD"
+    },
+    "category": "Electronics",
+    "subCategory": "Smartphones",
+    "brand": "Apple",
+    "sku": "APL-IPH15PM-256-TIT",
+    "stock": {
+      "quantity": 50,
+      "reserved": 5,
+      "available": 45
+    },
+    "specifications": {
+      "weight": 221,
+      "dimensions": {
+        "length": 15.9,
+        "width": 7.6,
+        "height": 0.83,
+        "unit": "cm"
+      },
+      "color": "Natural Titanium",
+      "size": "6.7 inch",
+      "material": "Titanium",
+      "warranty": "1 Year Limited Warranty"
+    },
+    "tags": ["smartphone", "apple", "5g", "titanium", "pro"],
+    "featured": true,
+    "shippingInfo": {
+      "weight": 0.5,
+      "freeShipping": true,
+      "shippingCost": 0
+    },
+    "seoInfo": {
+      "metaTitle": "iPhone 15 Pro Max - Buy the Latest Apple Smartphone",
+      "metaDescription": "Get the iPhone 15 Pro Max with A17 Pro chip, titanium design, and advanced camera system. Free shipping available.",
+      "keywords": ["iphone 15", "apple smartphone", "titanium phone", "pro camera"]
+    }
+  },
+  {
+    "title": "Samsung Galaxy S24 Ultra",
+    "description": "Premium Android smartphone with S Pen, 200MP camera, and Galaxy AI features for enhanced productivity and creativity.",
+    "shortDescription": "Premium Galaxy smartphone with S Pen and AI features",
+    "images": [
+      "https://example.com/images/galaxy-s24-ultra-front.jpg",
+      "https://example.com/images/galaxy-s24-ultra-back.jpg"
+    ],
+    "price": {
+      "original": 1299.99,
+      "currency": "USD"
+    },
+    "category": "Electronics",
+    "subCategory": "Smartphones",
+    "brand": "Samsung",
+    "sku": "SAM-GS24U-512-PHB",
+    "stock": {
+      "quantity": 30,
+      "reserved": 3,
+      "available": 27
+    },
+    "specifications": {
+      "weight": 232,
+      "dimensions": {
+        "length": 16.2,
+        "width": 7.9,
+        "height": 0.86,
+        "unit": "cm"
+      },
+      "color": "Phantom Black",
+      "size": "6.8 inch",
+      "material": "Aluminum Frame with Gorilla Glass",
+      "warranty": "1 Year Manufacturer Warranty"
+    },
+    "tags": ["android", "samsung", "s-pen", "galaxy-ai", "ultra"],
+    "featured": true,
+    "shippingInfo": {
+      "weight": 0.6,
+      "freeShipping": true,
+      "shippingCost": 0
+    }
+  },
+  {
+    "title": "Sony WH-1000XM5 Wireless Headphones",
+    "description": "Industry-leading noise canceling wireless headphones with 30-hour battery life and premium sound quality.",
+    "shortDescription": "Premium noise-canceling wireless headphones",
+    "images": [
+      "https://example.com/images/sony-wh1000xm5-black.jpg",
+      "https://example.com/images/sony-wh1000xm5-silver.jpg"
+    ],
+    "price": {
+      "original": 399.99,
+      "discounted": 349.99,
+      "currency": "USD"
+    },
+    "category": "Electronics",
+    "subCategory": "Audio",
+    "brand": "Sony",
+    "sku": "SNY-WH1000XM5-BLK",
+    "stock": {
+      "quantity": 75,
+      "reserved": 0,
+      "available": 75
+    },
+    "specifications": {
+      "weight": 250,
+      "color": "Black",
+      "material": "Premium Plastic and Metal",
+      "warranty": "1 Year Limited Warranty"
+    },
+    "tags": ["headphones", "wireless", "noise-canceling", "bluetooth", "premium"],
+    "featured": false,
+    "shippingInfo": {
+      "weight": 0.4,
+      "freeShipping": true,
+      "shippingCost": 0
+    }
+  },
+  {
+    "title": "MacBook Pro 14-inch M3",
+    "description": "Professional laptop with M3 chip, Liquid Retina XDR display, and up to 22 hours of battery life. Perfect for creative professionals.",
+    "shortDescription": "Professional MacBook with M3 chip and XDR display",
+    "images": [
+      "https://example.com/images/macbook-pro-14-m3.jpg"
+    ],
+    "price": {
+      "original": 1999.99,
+      "currency": "USD"
+    },
+    "category": "Electronics",
+    "subCategory": "Laptops",
+    "brand": "Apple",
+    "sku": "APL-MBP14-M3-512-SG",
+    "stock": {
+      "quantity": 20,
+      "reserved": 2,
+      "available": 18
+    },
+    "specifications": {
+      "weight": 1560,
+      "dimensions": {
+        "length": 31.26,
+        "width": 22.12,
+        "height": 1.55,
+        "unit": "cm"
+      },
+      "color": "Space Gray",
+      "material": "Recycled Aluminum",
+      "warranty": "1 Year Limited Warranty"
+    },
+    "tags": ["macbook", "laptop", "m3-chip", "professional", "creative"],
+    "featured": true,
+    "shippingInfo": {
+      "weight": 2.0,
+      "freeShipping": true,
+      "shippingCost": 0
+    }
+  },
+  {
+    "title": "Nike Air Max 270",
+    "description": "Lifestyle sneakers with large Max Air unit in the heel and breathable mesh upper. Perfect for everyday wear and light workouts.",
+    "shortDescription": "Comfortable lifestyle sneakers with Max Air technology",
+    "images": [
+      "https://example.com/images/nike-air-max-270-white.jpg",
+      "https://example.com/images/nike-air-max-270-black.jpg"
+    ],
+    "price": {
+      "original": 150.00,
+      "discounted": 129.99,
+      "currency": "USD"
+    },
+    "category": "Fashion",
+    "subCategory": "Footwear",
+    "brand": "Nike",
+    "sku": "NIK-AM270-WHT-10",
+    "stock": {
+      "quantity": 100,
+      "reserved": 10,
+      "available": 90
+    },
+    "specifications": {
+      "color": "White/Black",
+      "size": "US 10",
+      "material": "Mesh and Synthetic Materials",
+      "warranty": "2 Year Manufacturer Warranty"
+    },
+    "tags": ["sneakers", "nike", "air-max", "lifestyle", "comfortable"],
+    "featured": false,
+    "shippingInfo": {
+      "weight": 0.8,
+      "freeShipping": false,
+      "shippingCost": 9.99
+    }
+  },
+  {
+    "title": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+    "description": "Multi-use programmable pressure cooker that works as pressure cooker, slow cooker, rice cooker, steamer, sauté, yogurt maker and warmer.",
+    "shortDescription": "7-in-1 programmable electric pressure cooker",
+    "images": [
+      "https://example.com/images/instant-pot-duo-6qt.jpg"
+    ],
+    "price": {
+      "original": 99.99,
+      "discounted": 79.99,
+      "currency": "USD"
+    },
+    "category": "Home & Kitchen",
+    "subCategory": "Small Appliances",
+    "brand": "Instant Pot",
+    "sku": "IP-DUO60-6QT",
+    "stock": {
+      "quantity": 45,
+      "reserved": 0,
+      "available": 45
+    },
+    "specifications": {
+      "weight": 5400,
+      "dimensions": {
+        "length": 33,
+        "width": 31.7,
+        "height": 31.7,
+        "unit": "cm"
+      },
+      "material": "Stainless Steel",
+      "warranty": "1 Year Limited Warranty"
+    },
+    "tags": ["pressure-cooker", "kitchen-appliance", "multi-cooker", "instant-pot"],
+    "featured": false,
+    "shippingInfo": {
+      "weight": 6.0,
+      "freeShipping": true,
+      "shippingCost": 0
+    }
+  },
+  {
+    "title": "Levi's 501 Original Fit Jeans",
+    "description": "The original blue jean since 1873. Classic straight fit with authentic button fly and traditional styling.",
+    "shortDescription": "Classic original fit blue jeans",
+    "images": [
+      "https://example.com/images/levis-501-dark-wash.jpg"
+    ],
+    "price": {
+      "original": 69.50,
+      "currency": "USD"
+    },
+    "category": "Fashion",
+    "subCategory": "Men's Clothing",
+    "brand": "Levi's",
+    "sku": "LVS-501-DW-32-32",
+    "stock": {
+      "quantity": 60,
+      "reserved": 0,
+      "available": 60
+    },
+    "specifications": {
+      "color": "Dark Wash",
+      "size": "32W x 32L",
+      "material": "100% Cotton Denim"
+    },
+    "tags": ["jeans", "denim", "levis", "501", "classic"],
+    "featured": false,
+    "shippingInfo": {
+      "weight": 0.7,
+      "freeShipping": false,
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "title": "Dyson V15 Detect Cordless Vacuum",
+    "description": "Powerful cordless vacuum with laser dust detection, LCD screen showing real-time particle count, and up to 60 minutes of runtime.",
+    "shortDescription": "Advanced cordless vacuum with laser dust detection",
+    "images": [
+      "https://example.com/images/dyson-v15-detect.jpg"
+    ],
+    "price": {
+      "original": 749.99,
+      "currency": "USD"
+    },
+    "category": "Home & Kitchen",
+    "subCategory": "Vacuum Cleaners",
+    "brand": "Dyson",
+    "sku": "DYS-V15-DET-YLW",
+    "stock": {
+      "quantity": 25,
+      "reserved": 2,
+      "available": 23
+    },
+    "specifications": {
+      "weight": 3000,
+      "color": "Yellow/Nickel",
+      "material": "High-grade Plastics and Metal",
+      "warranty": "2 Year Limited Warranty"
+    },
+    "tags": ["vacuum", "cordless", "dyson", "laser-detection", "powerful"],
+    "featured": true,
+    "shippingInfo": {
+      "weight": 4.0,
+      "freeShipping": true,
+      "shippingCost": 0
+    }
+  }
+]
